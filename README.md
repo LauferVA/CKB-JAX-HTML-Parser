@@ -2,6 +2,7 @@
 This repository contains a very short workflow that parses the CKB CORE data housed at https://ckb.jax.org/
 
 Notes:
+
 These data were pulled using the attached parse script, which was run in Python 3.11. An env file is provided and can install necessary modules provided that pip3 is present and the user has appropriate permissions.
 Briefly, the source HTML in the main gene page is used to build the first table (housed in the CKB_CORE tab). The links in this page are used to identify the individual gene pages. The remaining tabs are populated by parsing each single-gene page.
 Each single gene page has multiple tabs. In this spreadsheet, all 49 CKB CORE genes are put together. However, each tab in the single gene pages corresponds to a single tab in this spreadsheet.
@@ -12,6 +13,7 @@ For terms, glossary, curation information, etc. please see: https://ckb.jax.org/
 Contact: For comments, questions, etc., please use either vlaufer@med.umich.edu or laufer@openchromatin.com
 
 Known_Issues:
+
 The data provided differ somewhat from the raw output of the python functions provided. Specifically, 5 or so regular expressions were used to clean raw output (e.g., multi-line fields). Changes to content are not made.
 Manual inspection indicate that some of the data itself could be regarded as suspect or definitions used as somewhat arbitrary. As an example, consider the information contained in the EfficacyEvidence tab related to the N549K variant in FGFR2.
 Several tabs Refer to Variants on a certain genetic background (e.g., KRAS G12D TP53 WT). These entries are not always parsed exhaustively.
